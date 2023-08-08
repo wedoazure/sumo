@@ -7,6 +7,9 @@ import openai
 #define text file variable
 text_file = "sherlock-holmes-hounds.txt"
 
+#define temperature variable for model
+creativity = 0.8
+
 def main(): 
         
     try: 
@@ -30,7 +33,7 @@ def main():
         print("Sending request for summary to Azure OpenAI endpoint...\n\n")
         response = openai.ChatCompletion.create(
             engine=azure_oai_model,
-            temperature=0.8,
+            temperature=creativity,
             max_tokens=120,
             messages=[
             {"role": "system", "content": "You are a helpful assistant. Summarize the following text in 67 words or less."},
