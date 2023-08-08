@@ -33,7 +33,7 @@ def main():
             temperature=0.9,
             max_tokens=120,
             messages=[
-            {"role": "system", "content": "You are a helpful assistant. Summarize the following text in 50 words or less."},
+            {"role": "system", "content": "You are a helpful assistant. Summarize the following text in 67 words or less."},
                 {"role": "user", "content": text}
             ]
         )
