@@ -10,6 +10,9 @@ text_file = "sherlock-holmes-hounds.txt"
 #define temperature variable for model
 creativity = 0.8
 
+#define response length variable
+count = "27"
+
 def main(): 
         
     try: 
@@ -36,7 +39,7 @@ def main():
             temperature=creativity,
             max_tokens=120,
             messages=[
-            {"role": "system", "content": "You are a helpful assistant. Summarize the following text in 67 words or less."},
+            {"role": "system", "content": "You are a helpful assistant. Summarize the following text in "+ count + " words or less."},
                 {"role": "user", "content": text}
             ]
         )
