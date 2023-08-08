@@ -10,6 +10,11 @@ You will need a deployment of Azure OpenAI, don't forget it is a gated service.
 
 I would recommend GPT35 for this app, it works well and is cheaper than GPT4.
 
+Locally, you will need Python installed. Once installed, you can add the rest of the requirements using the below
+
+pip install python-dotenv
+pip install openai
+
 # Customise
 
 You will need to use the provided text file, or bring your own. Update the relative text_file variable in the sumo file.

@@ -30,7 +30,7 @@ def main():
         print("Sending request for summary to Azure OpenAI endpoint...\n\n")
         response = openai.ChatCompletion.create(
             engine=azure_oai_model,
-            temperature=0.9,
+            temperature=0.8,
             max_tokens=120,
             messages=[
             {"role": "system", "content": "You are a helpful assistant. Summarize the following text in 67 words or less."},
