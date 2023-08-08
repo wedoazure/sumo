@@ -16,9 +16,9 @@ You will need to use the provided text file, or bring your own. Update the relat
 
 You will also need your own env file, with the following entries for your own Azure OpenAI instance.
 
-AZURE_OAI_ENDPOINT=
-AZURE_OAI_KEY=
-AZURE_OAI_MODEL=
+AZURE_OAI_ENDPOINT=  
+AZURE_OAI_KEY=  
+AZURE_OAI_MODEL=  
 
 Note: Model is the name you have given to your deployment.
 
